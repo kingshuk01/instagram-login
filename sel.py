@@ -1,7 +1,9 @@
+# install streamlit and download chrome webdriver
+
 from selenium import webdriver
-from password import passw
 from time import sleep
-user = "kingshuk.mukherjee"
+user = "enter user name here"
+passw = "enter password here"
 
 
 browser = webdriver.Chrome('C:/Users/asus/Downloads/chromedriver.exe')
@@ -17,9 +19,9 @@ sleep(4)
 browser.find_element_by_xpath("//button[contains(text(), 'Not Now')]").click()
 sleep(0.1)
 browser.find_element_by_xpath("//button[contains(text(), 'Not Now')]").click()
-sleep(0.5)
-browser.find_element_by_xpath("/html/body/div[1]/section/nav/div[2]/div/div/div[3]/div/div[2]/a").click()
-sleep(3)
-browser.find_element_by_xpath("/html/body/div[1]/section/div/div[2]/div/div/div[1]/div[2]/div/div/div/div/div[1]/a").click()
+# sleep(0.5)
+# browser.find_element_by_xpath("/html/body/div[1]/section/nav/div[2]/div/div/div[3]/div/div[2]/a").click()
+# sleep(3)
+# browser.find_element_by_xpath("/html/body/div[1]/section/div/div[2]/div/div/div[1]/div[2]/div/div/div/div/div[1]/a").click()
 
 
